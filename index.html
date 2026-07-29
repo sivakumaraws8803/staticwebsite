@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cloud Learning</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+}
+
+/* Header */
+
+header{
+    background:#0f172a;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+/* Hero */
+
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    background:linear-gradient(rgba(15,23,42,.75),rgba(15,23,42,.75)),
+    url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    font-size:18px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#0284c7;
+}
+
+/* Features */
+
+.features{
+    padding:70px 8%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.title h2{
+    font-size:40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    margin:20px 0;
+}
+
+/* About */
+
+.about{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    padding:80px 8%;
+    background:white;
+}
+
+.about img{
+    width:100%;
+    max-width:500px;
+    border-radius:10px;
+}
+
+.about-text{
+    flex:1;
+    padding:40px;
+}
+
+.about-text h2{
+    margin-bottom:20px;
+    font-size:40px;
+}
+
+.about-text p{
+    line-height:1.8;
+}
+
+/* Contact */
+
+.contact{
+    padding:70px 8%;
+    text-align:center;
+}
+
+.contact h2{
+    margin-bottom:20px;
+}
+
+.contact p{
+    margin-bottom:30px;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    margin-top:20px;
+}
+
+nav ul li{
+    margin:10px 0;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.about{
+    flex-direction:column;
+}
+
+.about-text{
+    padding:20px 0;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">
+CloudLearning
+</div>
+
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Welcome to Cloud Learning</h1>
+
+<p>Learn Linux, AWS, DevOps, Docker, Kubernetes and Cloud Technologies.</p>
+
+<a href="#" class="btn">Get Started</a>
+
+</div>
+
+</section>
+
+<section class="features" id="features">
+
+<div class="title">
+<h2>Our Features</h2>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Linux</h3>
+<p>Master Linux administration with real-world practical examples.</p>
+</div>
+
+<div class="card">
+<h3>AWS Cloud</h3>
+<p>Deploy applications on AWS EC2, S3, IAM, EBS, VPC and more.</p>
+</div>
+
+<div class="card">
+<h3>DevOps</h3>
+<p>Learn Docker, Kubernetes, Jenkins, Git, CI/CD pipelines and automation.</p>
+</div>
+
+<div class="card">
+<h3>Projects</h3>
+<p>Build real-time cloud projects for production deployment.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="about" id="about">
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80">
+
+<div class="about-text">
+
+<h2>About Us</h2>
+
+<p>
+
+Cloud Learning provides professional training on Linux Administration,
+AWS Cloud, DevOps, Docker, Kubernetes, Terraform and real-time projects.
+
+Our goal is to help students become industry-ready through practical,
+hands-on learning.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<p>Email : info@cloudlearning.com</p>
+
+<p>Phone : +91 98765 43210</p>
+
+<a href="#" class="btn">Contact Now</a>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Cloud Learning. All Rights Reserved.
+</p>
+
+</footer>
+
+</body>
+</html>
